@@ -10,31 +10,70 @@
 <body>
     <div class="row justify-content-center">
         <div class="col-9">
-            <h1>Calcola il prezzo del tuo biglietto</h1>
-            <div>
-                <label for="user" >Nome Cognome</label>
-                <input type="text" name="user" id="user">
-                <label for="distance_km">Km da percorrere</label>
-                <input type="text" name="distance_km" id="distance_km">
-                <label for="age">Fascia d'età</label>
-                <select name="age" id="age">
-                    <option value="underage">minorenne</option>
-                    <option value="adult">
-                        maggiorenne
-                    </option>
-                    <option value="over65">over 65</option>
-                </select>
-                <div class="mt-4">
-                    <button class="btn-send">Genera</button> <button>Annulla</button>
+            <div class="container">
+                <div class="card my-5 bg-5ac8fa">
+                    <div class="card-body">
+                        <h5 class="card-title">Calcola il prezzo del tuo biglietto</h5>
+                    </div>
+                    <div class="p-4">
+                        <div class="row">
+                            <div class="col-5">
+                                <label for="user" class="form-floating" >Nome Cognome</label>
+                                <input class="form-control" type="text"  name="user" id="user">
+                            </div>
+                            <div class="col-5">
+                                <label for="distance_km">Km da percorrere</label>
+                                <input class="form-control ou" type="text" name="distance_km" id="distance_km">
+                            </div>
+                            <div class="col-2">
+                                <label for="age">Fascia d'età</label>
+                                <select class="form-select" name="age" id="age">
+                                    <option value="underage">minorenne</option>
+                                    <option value="adult">
+                                        maggiorenne
+                                    </option>
+                                    <option value="over65">over 65</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button class="btn btn-primary btn-send">Genera</button>
+                                <button class="btn btn-primary">Annulla</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="col-9">
-            <h1>Il tuo Biglietto</h1>
-            <div>
-               <span id="passenger"></span> 
-               <span id="price-ticket"></span>
+            <div class="container">
+                <div class="card bg-5ac8fa my-5">
+                    <div class="card-body">
+                        <h5 class="card-title">Il tuo Biglietto</h5>
+                    </div>
+                    <div class="p-4">
+                        <table class="table table-bordered">
+                            <thead>
+                              <tr class="table-secondary">
+                                <th scope="col">Nome Passeggero</th>
+                                <th scope="col">Offerta</th>
+                                <th scope="col">Carrozza</th>
+                                <th scope="col">Codice CP</th>
+                                <th scope="col">Prezzo</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><span id="passenger">...</span></td>
+                                <td>Biglietto standard</td>
+                                <td>5</td>
+                                <td>92921</td>
+                                <td><span id="price-ticket">...</span>&euro;</td>
+                              </tr>
+                            </tbody>
+                        </table>                        
+                    </div>
+                </div>
             </div>
         </div>
     </div>
