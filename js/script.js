@@ -10,7 +10,7 @@ button.addEventListener("click", function () {
     console.log(user);
     console.log(distance_km);
     console.log(age);
-    
+
     // Sè l'utente avrà meno di 18 anni verra applicato il 20% di sconto
     if (age == "underage") {
         discount = (price_new * 20) / 100;
@@ -21,4 +21,9 @@ button.addEventListener("click", function () {
         discount = (price_new * 40) / 100;
         price_new -= discount
     }
+    
+    document.getElementById("passenger").innerText = user;
+    document.getElementById("price-ticket").innerText = price_new.toFixed(2);
+
+    console.log(price_new.toFixed(2));   
 })
