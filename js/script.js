@@ -25,3 +25,15 @@ button.addEventListener("click", function () {
 
     console.log(price_new.toFixed(2));   
 })
+
+
+const btn_reset = document.querySelector(".btn_reset");
+
+btn_reset.addEventListener("click", function () {
+    document.getElementById("user").value = "";
+    document.getElementById("distance_km").value = "";
+    document.getElementById("age").value = "";
+
+    document.getElementById("passenger").innerText = "";
+    document.getElementById("price-ticket").innerText = "";
+})
