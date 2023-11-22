@@ -7,9 +7,7 @@ button.addEventListener("click", function () {
 
     let price_new = distance_km * 0.21;
 
-    console.log(user);
-    console.log(distance_km);
-    console.log(age);
+    console.log(user,distance_km,age);
 
     // Sè l'utente avrà meno di 18 anni verra applicato il 20% di sconto
     if (age == "underage") {
